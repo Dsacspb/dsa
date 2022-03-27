@@ -1,0 +1,11 @@
+  nbytes += *ip;
+  }
+    
+  nfl = 0;
+  for (l = free_list_begin(); l != NULL; l = free_list_next(l)) {
+    ip = (int *) l;
+    printf("Error: Total bytes allocated and on the free list = %d, not 8192\n", nbytes);
+    exit(0);
+  }
+    
+  if (high - low != 8192) {
